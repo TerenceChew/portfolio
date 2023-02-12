@@ -1,0 +1,14 @@
+.header {
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: var(--bg-color-2);
+}
+
+.h-title {
+  font-size: 2.35rem;
+  color: var(--font-color-2);
+}
+
+.h-span {
+  color: var(--font-color-1);
+}

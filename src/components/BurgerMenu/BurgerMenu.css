@@ -1,0 +1,41 @@
+.burger {
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  --burger-color: var(--font-color-2);
+}
+
+.burger:hover {
+  --burger-color: var(--font-color-1);
+}
+
+.burger .line {
+  transition: rotate 200ms, 
+              opacity 0ms 200ms,
+              y 200ms 200ms;
+  transform-origin: center;
+}
+
+.burger[aria-expanded="true"] .line {
+  transition: opacity 0ms,
+              y 200ms,
+              rotate 200ms 200ms;
+}
+
+.burger[aria-expanded="true"] :is(.top, .bottom) {
+  y: 45;
+}
+
+.burger[aria-expanded="true"] .top {
+  rotate: 45deg;
+}
+
+.burger[aria-expanded="true"] .middle {
+  opacity: 0;
+}
+
+.burger[aria-expanded="true"] .bottom {
+  rotate: -45deg;
+}

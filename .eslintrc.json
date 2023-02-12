@@ -20,6 +20,10 @@
     "rules": {
         "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
         "react/react-in-jsx-scope": "off",
+        "react/function-component-definition": "off",
+        "react/button-has-type": "off",
+        "react/prop-types": "off",
+        "arrow-body-style": "off",
         "semi": ["error", "always"],
         "quotes": ["error", "double"]
     }
