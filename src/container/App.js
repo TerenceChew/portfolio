@@ -2,6 +2,18 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "../components/Header/Header";
 
+const debounce = (cb, delay = 500) => {
+  let timeout;
+
+  return (...args) => {
+    clearTimeout(timeout);
+
+    timeout = setTimeout(() => {
+      cb(...args);
+    }, delay);
+  };
+};
+
 const App = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -9,11 +21,12 @@ const App = () => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
+    const debouncedHandleResize = debounce(handleResize);
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", debouncedHandleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", debouncedHandleResize);
     };
   });
 
