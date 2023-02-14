@@ -9,3 +9,7 @@
 .nav-list > li {
   cursor: pointer;
 }
+
+.nav-list > li:hover {
+  color: var(--font-color-1);
+}

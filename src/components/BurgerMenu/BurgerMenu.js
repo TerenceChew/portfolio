@@ -1,6 +1,7 @@
 import "./BurgerMenu.css";
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ fullPageNavToggler, showFullPageNav }) => {
+  const ariaExpanded = showFullPageNav ? "true" : "false";
   const handleClick = (e) => {
     const burger = e.currentTarget;
     const isExpanded = burger.getAttribute("aria-expanded");
@@ -10,12 +11,14 @@ const BurgerMenu = () => {
     } else {
       burger.setAttribute("aria-expanded", "false");
     }
+
+    fullPageNavToggler();
   };
 
   return (
     <button
       className="burger flex f-center"
-      aria-expanded="false"
+      aria-expanded={ariaExpanded}
       onClick={handleClick}
     >
       <svg fill="var(--burger-color)" viewBox="0 0 100 100" width={35}>

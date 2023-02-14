@@ -1,0 +1,27 @@
+.full-page-nav {
+  width: 0%;
+  gap: 1.25rem;
+  padding-bottom: 10rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg-color-2);
+  overflow: hidden;
+  transition: width 350ms;
+}
+
+.full-page-nav.expand {
+  width: 100%;
+}
+
+.full-page-nav h1 {
+  font-size: 5.15rem;
+  color: var(--font-color-2)
+}
+
+.full-page-nav h1 span {
+  font-size: 4rem;
+  color: var(--font-color-1)
+}

@@ -1,9 +1,14 @@
 import "./Nav.css";
 
-const Nav = () => {
+const Nav = ({ flexDirection }) => {
+  const style = {
+    flexDirection,
+    gap: flexDirection === "column" ? "2.5rem" : "0",
+  };
+
   return (
     <div className="nav flex f-center">
-      <ul className="nav-list flex">
+      <ul className="nav-list flex f-center" style={style}>
         <li>Home</li>
         <li>About</li>
         <li>Skills</li>
