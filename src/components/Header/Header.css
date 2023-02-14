@@ -1,5 +1,5 @@
 .header {
-  height: 85px;
+  height: 80px;
   justify-content: space-between;
   padding: 0 30px;
   background-color: var(--bg-color-2);
@@ -7,6 +7,7 @@
 
 .h-title {
   font-size: 2.35rem;
+  font-weight: 800;
   color: var(--font-color-2);
 }
 

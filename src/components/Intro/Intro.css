@@ -1,0 +1,27 @@
+.intro {
+  /* background-color: pink; */
+  word-spacing: .15rem;
+  color: var(--font-color-2);
+}
+
+.greeting {
+  font-size: 1.15rem;
+  font-family: monospace;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.intro h1 {
+  font-size: 1.65rem;
+}
+
+.intro h1:first-of-type {
+  color: var(--font-color-1);
+}
+
+.intro button {
+  margin-top: 25px;
+}

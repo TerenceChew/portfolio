@@ -14,12 +14,20 @@ const BurgerMenu = ({ fullPageNavToggler, showFullPageNav }) => {
 
     fullPageNavToggler();
   };
+  const style = showFullPageNav
+    ? {
+        position: "fixed",
+        top: "20px",
+        right: "30px",
+      }
+    : {};
 
   return (
     <button
       className="burger flex f-center"
       aria-expanded={ariaExpanded}
       onClick={handleClick}
+      style={style}
     >
       <svg fill="var(--burger-color)" viewBox="0 0 100 100" width={35}>
         <rect

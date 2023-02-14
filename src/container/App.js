@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "../components/Header/Header";
+import Intro from "../components/Intro/Intro";
+import AboutMe from "../components/AboutMe/AboutMe";
 
 const debounce = (cb, delay = 500) => {
   let timeout;
@@ -33,6 +35,10 @@ const App = () => {
   return (
     <div className="app">
       <Header windowWidth={windowWidth} />
+      <div>
+        <Intro />
+        <AboutMe />
+      </div>
     </div>
   );
 };

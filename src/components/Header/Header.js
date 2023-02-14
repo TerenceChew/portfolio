@@ -16,17 +16,15 @@ const Header = ({ windowWidth }) => {
       <h1 className="h-title">
         Terence<span className="h-span">.dev</span>
       </h1>
-      {
-        windowWidth < 950 ?
-        <BurgerMenu 
+      {windowWidth < 950 ? (
+        <BurgerMenu
           fullPageNavToggler={handleClick}
           showFullPageNav={showFullPageNav}
-        /> :
+        />
+      ) : (
         <Nav />
-      }
-      {
-        windowWidth < 950 && <FullPageNav showFullPageNav={showFullPageNav} />
-      }
+      )}
+      {windowWidth < 950 && <FullPageNav showFullPageNav={showFullPageNav} />}
     </div>
   );
 };

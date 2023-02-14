@@ -1,0 +1,17 @@
+.about-me p {
+  margin: 25px 0;
+  color: var(--font-color-2);
+  font-size: 1.2rem;
+}
+
+.about-me p :is(span, code) {
+  color: var(--font-color-1);
+}
+
+.about-me p code {
+  display: inline-block;
+  padding: 2px 7px;
+  margin: 0 1px;
+  border-radius: 4px;
+  background-color: #4b545f;
+}
