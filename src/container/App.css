@@ -31,8 +31,8 @@
 }
 
 .section {
-  max-width: 790px;
-  padding: 80px 50px;
+  max-width: 800px;
+  padding: 70px 50px;
   margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: .25rem;
+  width: .35rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -83,4 +83,10 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--font-color-1);
+}
+
+@media (min-width: 1000px) {
+  .section {
+    max-width: 1050px;
+  }
 }

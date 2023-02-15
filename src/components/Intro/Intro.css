@@ -1,10 +1,10 @@
 .intro {
-  /* background-color: pink; */
-  word-spacing: .15rem;
+  word-spacing: .1rem;
   color: var(--font-color-2);
 }
 
 .greeting {
+  margin-top: 10px;
   font-size: 1.15rem;
   font-family: monospace;
 }
@@ -12,6 +12,7 @@
 .name {
   font-size: 5rem;
   font-weight: 700;
+  line-height: 1.35;
 }
 
 .intro h1 {

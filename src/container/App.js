@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "../components/Header/Header";
 import Intro from "../components/Intro/Intro";
 import AboutMe from "../components/AboutMe/AboutMe";
+import Skills from "../components/SkillsGrid/SkillsGrid";
 
 const debounce = (cb, delay = 500) => {
   let timeout;
@@ -38,6 +39,7 @@ const App = () => {
       <div>
         <Intro />
         <AboutMe />
+        <Skills />
       </div>
     </div>
   );
