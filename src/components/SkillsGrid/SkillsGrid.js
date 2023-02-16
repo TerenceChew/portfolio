@@ -1,4 +1,5 @@
 import "./SkillsGrid.css";
+import uniqid from "uniqid";
 import js from "./assets/svgs/js.svg";
 import html from "./assets/svgs/html.svg";
 import css from "./assets/svgs/css.svg";
@@ -45,7 +46,7 @@ const Skills = () => {
     },
   ];
   const skillBoxes = skills.map((skill) => (
-    <SkillBox img={skill.img} skill={skill.name} />
+    <SkillBox key={uniqid()} img={skill.img} skill={skill.name} />
   ));
 
   return (

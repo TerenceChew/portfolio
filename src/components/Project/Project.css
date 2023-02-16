@@ -1,0 +1,21 @@
+.project {
+  gap: 30px;
+  padding: 30px 25px;
+  background-color: var(--bg-color-2);
+  color: var(--font-color-2);
+  border-radius: 5px;
+}
+
+.project span {
+  color: var(--font-color-1);
+}
+
+.project-img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: var(--font-size-4);
+}

@@ -17,11 +17,10 @@
 }
 
 .full-page-nav h1 {
-  font-size: 5.15rem;
+  font-size: var(--font-size-1);
   color: var(--font-color-2)
 }
 
 .full-page-nav h1 span {
-  font-size: 4rem;
   color: var(--font-color-1)
 }

@@ -1,7 +1,7 @@
 .about-me p {
   margin: 25px 0;
   color: var(--font-color-2);
-  font-size: 1.2rem;
+  font-size: var(--font-size-5);
 }
 
 .about-me p :is(span, code) {

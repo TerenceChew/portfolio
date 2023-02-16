@@ -14,6 +14,12 @@
   --bg-color-2: #252a30;
   --font-color-1: #ffd42f;
   --font-color-2:#edf5e1;
+  --font-size-1: 5.15rem;
+  --font-size-2: 2.5rem;
+  --font-size-3: 2.35rem;
+  --font-size-4: 1.65rem;
+  --font-size-5: 1.2rem;
+  --font-size-6: .95rem;
 }
 
 /* Utility Classes */
@@ -37,11 +43,11 @@
 }
 
 .section h2 {
-  font-size: 2.5rem;
+  font-size: var(--font-size-2);
   color: var(--font-color-2);
 }
 
-.section h2::before {
+:is(.section, .project) :is(h2, h4)::before {
   content: "#";
   color: var(--font-color-1);
 }
@@ -51,21 +57,28 @@
   color: var(--font-color-1);
 }
 
+.project h4::after {
+  content: ":";
+  color: var(--font-color-1);
+}
+
 .btn {
-  width: 135px;
-  padding: 12px 0;
+  width: 140px;
+  padding: 14px 0;
   outline: none;
   border: 1px solid var(--font-color-1);
   border-radius: 4px;
   background-color: transparent;
   color: var(--font-color-2);
   font-family: monospace;
-  font-size: .95rem;
+  font-size: var(--font-size-6);
   cursor: pointer;
 }
 
 .btn:hover {
-  color: var(--font-color-1);
+  background-color: var(--font-color-1);
+  color: black;
+  font-weight: bold;
 }
 
 body {

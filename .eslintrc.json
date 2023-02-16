@@ -23,6 +23,7 @@
         "react/function-component-definition": "off",
         "react/button-has-type": "off",
         "react/prop-types": "off",
+        "import/no-extraneous-dependencies": "off",
         "arrow-body-style": "off",
         "semi": ["error", "always"],
         "quotes": ["error", "double"]

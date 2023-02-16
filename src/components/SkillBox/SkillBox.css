@@ -12,7 +12,7 @@
 }
 
 .skill-box p {
-  font-size: 1.15rem;
+  font-size: var(--font-size-5);
   color: var(--font-color-2);
 }
 
