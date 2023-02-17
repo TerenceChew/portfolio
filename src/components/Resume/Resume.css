@@ -1,0 +1,11 @@
+.resume embed {
+  width: 100%;
+  height: 1050px;
+  margin-top: 25px;
+}
+
+@media (min-width: 1000px) {
+  .resume embed {
+    height: 1200px;
+  }
+}
