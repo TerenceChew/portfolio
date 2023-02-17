@@ -5,6 +5,7 @@ import Intro from "../components/Intro/Intro";
 import AboutMe from "../components/AboutMe/AboutMe";
 import SkillsGrid from "../components/SkillsGrid/SkillsGrid";
 import ProjectsGrid from "../components/ProjectsGrid/ProjectsGrid";
+import Contacts from "../components/Contacts/Contacts";
 
 const debounce = (cb, delay = 500) => {
   let timeout;
@@ -42,6 +43,7 @@ const App = () => {
         <AboutMe />
         <SkillsGrid />
         <ProjectsGrid />
+        <Contacts />
       </div>
     </div>
   );

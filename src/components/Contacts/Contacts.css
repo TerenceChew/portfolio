@@ -1,0 +1,34 @@
+.contacts > div {
+  gap: 15px;
+  margin-top: 25px;
+  padding: 25px 35px;
+  background-color: var(--bg-color-2);
+  color: var(--font-color-2);
+  border-radius: 5px;
+}
+
+.contact {
+  gap: 15px;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.contact img {
+  width: 2rem;
+}
+
+.contact a {
+  color: var(--font-color-2);
+  text-decoration: none;
+  font-size: var(--font-size-5);
+}
+
+.contact a:hover {
+  color: var(--font-color-1);
+  text-decoration: underline;
+}
+
+.btn.resume-btn {
+  width: 100%;
+  margin-top: 10px;
+}
