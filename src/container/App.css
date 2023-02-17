@@ -14,7 +14,7 @@
   --bg-color-2: #252a30;
   --font-color-1: #ffd42f;
   --font-color-2:#edf5e1;
-  --font-size-1: 5.15rem;
+  --font-size-1: 5.2rem;
   --font-size-2: 2.5rem;
   --font-size-3: 2.35rem;
   --font-size-4: 1.65rem;
@@ -38,7 +38,7 @@
 
 .section {
   max-width: 800px;
-  padding: 70px 50px;
+  padding: 50px;
   margin: 0 auto;
 }
 
