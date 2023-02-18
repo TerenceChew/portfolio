@@ -7,6 +7,7 @@ import SkillsGrid from "../components/SkillsGrid/SkillsGrid";
 import ProjectsGrid from "../components/ProjectsGrid/ProjectsGrid";
 import Contacts from "../components/Contacts/Contacts";
 import Resume from "../components/Resume/Resume";
+import Footer from "../components/Footer/Footer";
 
 const debounce = (cb, delay = 500) => {
   let timeout;
@@ -51,6 +52,7 @@ const App = () => {
         <ProjectsGrid />
         <Contacts showResume={showResume} toggleShowResume={toggleShowResume} />
         {showResume && <Resume />}
+        <Footer />
       </div>
     </div>
   );

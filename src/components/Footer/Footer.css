@@ -1,0 +1,23 @@
+.footer {
+  padding: 15px;
+  background-color: transparent;
+  color: var(--font-color-2);
+  font-size: var(--font-size-5);
+}
+
+.footer-box {
+  gap: 10px;
+}
+
+.footer a {
+  transition: rotate .75s;
+}
+
+.footer a:hover {
+  rotate: 360deg;
+}
+
+.footer-box img {
+  height: 35px;
+  width: 35px;
+}
