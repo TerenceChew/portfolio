@@ -1,5 +1,4 @@
 .intro {
-  word-spacing: .1rem;
   color: var(--font-color-2);
 }
 
@@ -9,10 +8,33 @@
   font-family: monospace;
 }
 
-.name {
+.name-box {
+  align-items: center;
+  margin: 15px 0;
   font-size: var(--font-size-1);
-  font-weight: 700;
-  line-height: 1.35;
+}
+
+.prompt {
+  margin-right: 25px;
+  font-size: calc(var(--font-size-1) - 1.85rem);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.name {
+  position: relative;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 900;
+}
+
+.name::before {
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  border-left: 2px solid var(--font-color-2);
+  animation: type 3s 1s forwards steps(8, start), blink 1s 4s infinite;
+  background-color: var(--bg-color-1);
 }
 
 .intro h1 {
@@ -25,4 +47,20 @@
 
 .intro button {
   margin-top: 25px;
+}
+
+@keyframes type {
+  to {
+    left: 100%;
+    width: 2px;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: var(--bg-color-1);
+  }
+  to {
+    border-color: var(--font-color-2);
+  }
 }
