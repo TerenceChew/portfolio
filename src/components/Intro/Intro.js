@@ -10,7 +10,9 @@ const Intro = () => {
       </div>
       <h1>Front-End Web Developer.</h1>
       <h1>I build things and make them pretty on the Internet.</h1>
-      <button className="btn">Resume</button>
+      <button className="btn">
+        <a href="#resume">Resume</a>
+      </button>
     </section>
   );
 };
