@@ -65,7 +65,7 @@
 .btn {
   width: 140px;
   height: 48px;
-  outline: none;
+  outline-color: transparent;
   border: 1px solid var(--font-color-1);
   border-radius: 4px;
   background-color: transparent;
