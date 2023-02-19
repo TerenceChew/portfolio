@@ -91,6 +91,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-color-1);
   font-family: 'Poppins', sans-serif;
