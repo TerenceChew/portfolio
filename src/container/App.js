@@ -29,6 +29,10 @@ const App = () => {
     setShouldShowResume((prevVal) => !prevVal);
   };
 
+  const showResume = () => {
+    setShouldShowResume(true);
+  };
+
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -46,7 +50,7 @@ const App = () => {
     <div className="app">
       <Header windowWidth={windowWidth} />
       <div>
-        <Intro />
+        <Intro showResume={showResume} />
         <AboutMe />
         <SkillsGrid />
         <ProjectsGrid />

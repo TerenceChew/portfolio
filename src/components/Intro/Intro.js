@@ -1,6 +1,6 @@
 import "./Intro.css";
 
-const Intro = () => {
+const Intro = ({ showResume }) => {
   return (
     <section id="intro" className="intro section">
       <div className="greeting">Hi there! My name is</div>
@@ -11,7 +11,9 @@ const Intro = () => {
       <h1>Front-End Web Developer.</h1>
       <h1>I build things and make them pretty on the Internet.</h1>
       <button className="btn">
-        <a href="#resume">Resume</a>
+        <a href="#resume" onClick={showResume}>
+          Resume
+        </a>
       </button>
     </section>
   );
