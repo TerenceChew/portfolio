@@ -1,7 +1,7 @@
 import "./BurgerMenu.css";
 
-const BurgerMenu = ({ fullPageNavToggler, showFullPageNav }) => {
-  const ariaExpanded = showFullPageNav ? "true" : "false";
+const BurgerMenu = ({ toggleFullPageNav, shouldShowFullPageNav }) => {
+  const ariaExpanded = shouldShowFullPageNav ? "true" : "false";
   const handleClick = (e) => {
     const burger = e.currentTarget;
     const isExpanded = burger.getAttribute("aria-expanded");
@@ -12,9 +12,9 @@ const BurgerMenu = ({ fullPageNavToggler, showFullPageNav }) => {
       burger.setAttribute("aria-expanded", "false");
     }
 
-    fullPageNavToggler();
+    toggleFullPageNav();
   };
-  const style = showFullPageNav
+  const style = shouldShowFullPageNav
     ? {
         position: "fixed",
         top: "20px",

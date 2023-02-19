@@ -23,10 +23,10 @@ const debounce = (cb, delay = 500) => {
 
 const App = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [showResume, setShowResume] = useState(false);
+  const [shouldShowResume, setShouldShowResume] = useState(false);
 
-  const toggleShowResume = () => {
-    setShowResume((prevVal) => !prevVal);
+  const toggleResume = () => {
+    setShouldShowResume((prevVal) => !prevVal);
   };
 
   useEffect(() => {
@@ -50,8 +50,11 @@ const App = () => {
         <AboutMe />
         <SkillsGrid />
         <ProjectsGrid />
-        <Contacts showResume={showResume} toggleShowResume={toggleShowResume} />
-        {showResume && <Resume />}
+        <Contacts
+          shouldShowResume={shouldShowResume}
+          toggleResume={toggleResume}
+        />
+        {shouldShowResume && <Resume />}
         <Footer />
       </div>
     </div>

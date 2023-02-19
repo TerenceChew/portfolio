@@ -1,6 +1,6 @@
 import "./Nav.css";
 
-const Nav = ({ flexDirection, closeFullPageNav = null }) => {
+const Nav = ({ flexDirection, hideFullPageNav = null }) => {
   const style = {
     flexDirection,
     gap: flexDirection === "column" ? "2.5rem" : "0",
@@ -10,27 +10,27 @@ const Nav = ({ flexDirection, closeFullPageNav = null }) => {
     <div className="nav flex f-center">
       <ul className="nav-list flex f-center" style={style}>
         <li>
-          <a href="#intro" onClick={closeFullPageNav}>
+          <a href="#intro" onClick={hideFullPageNav}>
             Home
           </a>
         </li>
         <li>
-          <a href="#about-me" onClick={closeFullPageNav}>
+          <a href="#about-me" onClick={hideFullPageNav}>
             About
           </a>
         </li>
         <li>
-          <a href="#skills-grid" onClick={closeFullPageNav}>
+          <a href="#skills-grid" onClick={hideFullPageNav}>
             Skills
           </a>
         </li>
         <li>
-          <a href="#projects-grid" onClick={closeFullPageNav}>
+          <a href="#projects-grid" onClick={hideFullPageNav}>
             Projects
           </a>
         </li>
         <li>
-          <a href="#contacts" onClick={closeFullPageNav}>
+          <a href="#contacts" onClick={hideFullPageNav}>
             Contacts
           </a>
         </li>

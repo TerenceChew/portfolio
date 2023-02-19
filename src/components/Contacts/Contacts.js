@@ -3,7 +3,7 @@ import githubSvg from "./assets/svgs/github.svg";
 import linkednSvg from "./assets/svgs/linkedin.svg";
 import emailSvg from "./assets/svgs/email.svg";
 
-const Contacts = ({ showResume, toggleShowResume }) => {
+const Contacts = ({ shouldShowResume, toggleResume }) => {
   return (
     <section id="contacts" className="contacts section">
       <h2>Contacts</h2>
@@ -25,8 +25,8 @@ const Contacts = ({ showResume, toggleShowResume }) => {
           <a href="mailto:wschew97@gmail.com">wschew97@gmail.com</a>
         </div>
 
-        <button className="btn resume-btn" onClick={toggleShowResume}>
-          {showResume ? "Hide Resume" : "Show Resume"}
+        <button className="btn resume-btn" onClick={toggleResume}>
+          {shouldShowResume ? "Hide Resume" : "Show Resume"}
         </button>
       </div>
     </section>

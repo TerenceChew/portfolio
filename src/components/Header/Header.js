@@ -5,14 +5,14 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import FullPageNav from "../FullPageNav/FullPageNav";
 
 const Header = ({ windowWidth }) => {
-  const [showFullPageNav, setShowFullPageNav] = useState(false);
+  const [shouldShowFullPageNav, setShouldShowFullPageNav] = useState(false);
 
-  const handleClick = () => {
-    setShowFullPageNav((prevVal) => !prevVal);
+  const toggleFullPageNav = () => {
+    setShouldShowFullPageNav((prevVal) => !prevVal);
   };
 
-  const closeFullPageNav = () => {
-    setShowFullPageNav(false);
+  const hideFullPageNav = () => {
+    setShouldShowFullPageNav(false);
   };
 
   return (
@@ -22,16 +22,16 @@ const Header = ({ windowWidth }) => {
       </h1>
       {windowWidth < 950 ? (
         <BurgerMenu
-          fullPageNavToggler={handleClick}
-          showFullPageNav={showFullPageNav}
+          toggleFullPageNav={toggleFullPageNav}
+          shouldShowFullPageNav={shouldShowFullPageNav}
         />
       ) : (
         <Nav />
       )}
       {windowWidth < 950 && (
         <FullPageNav
-          showFullPageNav={showFullPageNav}
-          closeFullPageNav={closeFullPageNav}
+          shouldShowFullPageNav={shouldShowFullPageNav}
+          hideFullPageNav={hideFullPageNav}
         />
       )}
     </div>
