@@ -1,7 +1,7 @@
 import "./FullPageNav.css";
 import Nav from "../Nav/Nav";
 
-const FullPageNav = ({ showFullPageNav }) => {
+const FullPageNav = ({ showFullPageNav, closeFullPageNav }) => {
   return (
     <div
       className={`full-page-nav flex f-column f-center
@@ -10,7 +10,7 @@ const FullPageNav = ({ showFullPageNav }) => {
       <h1>
         t<span>.</span>
       </h1>
-      <Nav flexDirection="column" />
+      <Nav flexDirection="column" closeFullPageNav={closeFullPageNav} />
     </div>
   );
 };

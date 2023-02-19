@@ -11,6 +11,10 @@ const Header = ({ windowWidth }) => {
     setShowFullPageNav((prevVal) => !prevVal);
   };
 
+  const closeFullPageNav = () => {
+    setShowFullPageNav(false);
+  };
+
   return (
     <div className="header flex f-center">
       <h1 className="h-title">
@@ -24,7 +28,12 @@ const Header = ({ windowWidth }) => {
       ) : (
         <Nav />
       )}
-      {windowWidth < 950 && <FullPageNav showFullPageNav={showFullPageNav} />}
+      {windowWidth < 950 && (
+        <FullPageNav
+          showFullPageNav={showFullPageNav}
+          closeFullPageNav={closeFullPageNav}
+        />
+      )}
     </div>
   );
 };

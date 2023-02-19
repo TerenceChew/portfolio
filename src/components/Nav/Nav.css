@@ -2,7 +2,7 @@
   width: 485px;
   justify-content: space-between;
   font-size: var(--font-size-5);
-  color: white;
+  color: var(--font-color-2);
   list-style: none;
 }
 
@@ -10,6 +10,11 @@
   cursor: pointer;
 }
 
-.nav-list > li:hover {
+.nav-list a {
+  color: var(--font-color-2);
+  text-decoration: none;
+}
+
+.nav-list a:hover {
   color: var(--font-color-1);
 }
