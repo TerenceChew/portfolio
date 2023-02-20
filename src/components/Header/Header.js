@@ -16,7 +16,7 @@ const Header = ({ windowWidth }) => {
   };
 
   return (
-    <div className="header flex f-center">
+    <div id="header" className="header flex f-center">
       <h1 className="h-title">
         Terence<span className="h-span">.dev</span>
       </h1>

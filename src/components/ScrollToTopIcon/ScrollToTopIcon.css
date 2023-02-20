@@ -1,0 +1,14 @@
+.scroll-to-top-icon {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  z-index: 3000;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.scroll-to-top-icon:hover {
+  fill: var(--font-color-1);
+  stroke: var(--font-color-1);
+}
