@@ -9,6 +9,8 @@ const Footer = () => {
         <a
           className="flex f-center"
           href="https://github.com/TerenceChew?tab=repositories"
+          target="_blank"
+          rel="noreferrer"
         >
           <img src={githubSvg} alt="github" />
         </a>
