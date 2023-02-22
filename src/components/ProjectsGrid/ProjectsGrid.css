@@ -1,3 +1,4 @@
-.projects-grid > div {
+.projects-container {
+  gap: 35px;
   margin-top: 25px;
 }

@@ -10,10 +10,11 @@
   color: var(--font-color-1);
 }
 
-.project-img {
-  width: 250px;
-  height: auto;
+.project-video {
+  width: 650px;
+  height: 350px;
   margin-bottom: 15px;
+  object-fit: initial;
 }
 
 .project-title {

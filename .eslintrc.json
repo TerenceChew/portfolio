@@ -24,6 +24,7 @@
         "react/button-has-type": "off",
         "react/prop-types": "off",
         "import/no-extraneous-dependencies": "off",
+        "jsx-a11y/media-has-caption": "off",
         "arrow-body-style": "off",
         "semi": ["error", "always"],
         "quotes": ["error", "double"]
