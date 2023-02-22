@@ -10,19 +10,31 @@ const Contacts = ({ shouldShowResume, toggleResume }) => {
       <div className="flex f-column">
         <div className="contact flex">
           <img src={githubSvg} alt="github" />
-          <a href="https://github.com/TerenceChew?tab=repositories">GitHub</a>
+          <a
+            href="https://github.com/TerenceChew?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
         </div>
 
         <div className="contact flex">
           <img src={linkednSvg} alt="linked in" />
-          <a href="https://www.linkedin.com/in/terence-chew-03316922a/">
+          <a
+            href="https://www.linkedin.com/in/terence-chew-03316922a/"
+            target="_blank"
+            rel="noreferrer"
+          >
             LinkedIn
           </a>
         </div>
 
         <div className="contact flex">
           <img src={emailSvg} alt="email" />
-          <a href="mailto:wschew97@gmail.com">wschew97@gmail.com</a>
+          <a href="mailto:wschew97@gmail.com" target="_blank" rel="noreferrer">
+            wschew97@gmail.com
+          </a>
         </div>
 
         <button className="btn resume-btn" onClick={toggleResume}>
