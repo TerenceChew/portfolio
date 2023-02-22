@@ -10,7 +10,7 @@ const Nav = ({ flexDirection, hideFullPageNav = null }) => {
     <div className="nav flex f-center">
       <ul className="nav-list flex f-center" style={style}>
         <li>
-          <a href="#intro" onClick={hideFullPageNav}>
+          <a href="#header" onClick={hideFullPageNav}>
             Home
           </a>
         </li>
