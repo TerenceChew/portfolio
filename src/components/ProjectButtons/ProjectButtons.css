@@ -1,4 +1,11 @@
 .project-buttons {
-  gap: 50px;
-  margin-top: 25px;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+@media (min-width: 500px) {
+  .project-buttons {
+    gap: 50px;
+    margin-top: 20px;
+  }
 }

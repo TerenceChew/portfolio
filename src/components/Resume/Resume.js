@@ -12,7 +12,9 @@ const Resume = () => {
   return (
     <section ref={resumeRef} id="resume" className="resume section">
       <h2>Resume</h2>
-      <embed src={sample} title="Terence's resume" />
+      <div className="resume-wrapper">
+        <embed src={sample} title="Terence's resume" />
+      </div>
     </section>
   );
 };

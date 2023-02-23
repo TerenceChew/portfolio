@@ -10,7 +10,7 @@
   background-color: var(--bg-color-2);
   overflow: hidden;
   transition: width 350ms;
-  z-index: 1000;
+  z-index: 200;
 }
 
 .full-page-nav.expand {

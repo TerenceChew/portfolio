@@ -1,7 +1,7 @@
 .contacts > div {
   gap: 15px;
   margin-top: 25px;
-  padding: 25px 35px;
+  padding: 25px 15px;
   background-color: var(--bg-color-2);
   color: var(--font-color-2);
   border-radius: 5px;
@@ -13,7 +13,7 @@
 }
 
 .contact img {
-  width: 2rem;
+  width: 25.5px;
 }
 
 .contact a {
@@ -30,4 +30,14 @@
 .btn.resume-btn {
   width: 100%;
   margin-top: 10px;
+}
+
+@media (min-width: 500px) {
+  .contacts > div {
+    padding: 25px 25px;
+  }
+  
+  .contact img {
+    width: 32px;
+  }
 }

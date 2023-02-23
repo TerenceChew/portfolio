@@ -1,14 +1,14 @@
 .skill-box {
-  height: 135px;
-  width: 135px;
+  height: 125px;
+  width: 125px;
   gap: 5px;
   border-radius: 5px;
   background-color: var(--bg-color-2);
 }
 
 .skill-box img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 .skill-box p {
@@ -16,4 +16,15 @@
   color: var(--font-color-2);
 }
 
+@media (min-width: 650px) {
+  .skill-box {
+    height: 135px;
+    width: 135px;
+  }
+  
+  .skill-box img {
+    width: 70px;
+    height: 70px;
+  }
+}
 

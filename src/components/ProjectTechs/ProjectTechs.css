@@ -5,12 +5,14 @@
 .project-techs ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 35px;
   margin-top: 10px;
-  padding: 0 18px;
+  padding: 0 0px 0px 18px;
 }
 
 .project-techs li {
   font-size: var(--font-size-6);
+  overflow-wrap: anywhere;
 }
 
 .project-techs li::marker {

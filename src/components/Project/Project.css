@@ -1,6 +1,6 @@
 .project {
   gap: 30px;
-  padding: 30px 25px;
+  padding: 30px 14px;
   background-color: var(--bg-color-2);
   color: var(--font-color-2);
   border-radius: 5px;
@@ -11,12 +11,24 @@
 }
 
 .project-video {
-  width: 650px;
-  height: 350px;
-  margin-bottom: 15px;
+  width: var(--video-width);
+  height: var(--video-height);
+  margin-bottom: 20px;
   object-fit: initial;
 }
 
 .project-title {
   font-size: var(--font-size-4);
+}
+
+@media (min-width: 500px) {
+  .project {
+    padding: 30px 20px;
+  }
+}
+
+@media (min-width: 850px) {
+  .project {
+    padding: 35px 30px;
+  }
 }

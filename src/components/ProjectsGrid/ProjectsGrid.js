@@ -16,7 +16,7 @@ const ProjectsGrid = () => {
   return (
     <section id="projects-grid" className="projects-grid section">
       <h2>Projects</h2>
-      <div className="projects-container flex f-column f-center">
+      <div className="projects-container flex f-column">
         <Project video={faceRecogAppVid} title="Face Recognition App">
           <ProjectIntro>
             Face Recognizer is an application built with <span>React</span> and{" "}

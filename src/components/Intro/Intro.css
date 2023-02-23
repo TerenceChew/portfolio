@@ -11,7 +11,6 @@
 .name-box {
   align-items: center;
   margin: 15px 0;
-  font-size: var(--font-size-1);
 }
 
 .prompt {
@@ -24,6 +23,7 @@
   position: relative;
   font-family: 'Chivo Mono', monospace;
   font-weight: 900;
+  font-size: var(--font-size-1);
 }
 
 .name::before {

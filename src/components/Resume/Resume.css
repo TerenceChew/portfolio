@@ -1,11 +1,13 @@
-.resume embed {
-  width: 100%;
-  height: 1050px;
+.resume-wrapper {
+  position: relative;
+  padding-top: 140%;
   margin-top: 25px;
 }
 
-@media (min-width: 1000px) {
-  .resume embed {
-    height: 1200px;
-  }
+.resume embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

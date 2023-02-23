@@ -1,7 +1,7 @@
 .header {
   height: 80px;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 20px;
   background-color: var(--bg-color-2);
 }
 
@@ -13,4 +13,10 @@
 
 .h-span {
   color: var(--font-color-1);
+}
+
+@media (min-width: 650px) {
+  .header {
+    padding: 0 30px;
+  }
 }
