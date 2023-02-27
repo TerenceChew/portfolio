@@ -5,18 +5,19 @@
 .greeting {
   margin-top: 25px;
   font-size: var(--font-size-5);
-  font-family: monospace;
+  font-weight: normal;
 }
 
 .name-box {
   align-items: center;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 
 .prompt {
   margin-right: 25px;
   font-size: calc(var(--font-size-1) - 1.85rem);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: normal;
 }
 
 .name {
@@ -37,16 +38,14 @@
   background-color: var(--bg-color-1);
 }
 
-.intro :is(h1, p) {
-  font-size: var(--font-size-4);
-}
-
-.intro h1 {
-  color: var(--font-color-1);
-}
-
 .intro p {
+  word-spacing: .15rem;
+  font-size: var(--font-size-4);
   font-weight: bold;
+}
+
+.intro p span {
+  color: var(--font-color-1);
 }
 
 .intro button {
