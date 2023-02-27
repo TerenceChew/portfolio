@@ -37,12 +37,16 @@
   background-color: var(--bg-color-1);
 }
 
-.intro h1 {
+.intro :is(h1, p) {
   font-size: var(--font-size-4);
 }
 
-.intro h1:first-of-type {
+.intro h1 {
   color: var(--font-color-1);
+}
+
+.intro p {
+  font-weight: bold;
 }
 
 .intro button {
