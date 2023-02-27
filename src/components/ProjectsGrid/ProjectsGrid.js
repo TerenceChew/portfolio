@@ -19,9 +19,9 @@ const ProjectsGrid = () => {
       <div className="projects-container flex f-column">
         <Project video={faceRecogAppVid} title="Face Recognition App">
           <ProjectIntro>
-            Face Recognition App is built with both <span>frontend</span>
+            Face Recognition App is built with both <span>front-end</span>
             {" and "}
-            <span>backend</span> technologies. It detects faces in an image
+            <span>back-end</span> technologies. It detects faces in an image
             {" via "}
             <span>machine learning API</span> {" from "}
             <a
@@ -43,7 +43,7 @@ const ProjectsGrid = () => {
               "Routing",
               "User credentials validation",
               "Determining data constraints and setting up database",
-              "Integrating the backend with the frontend",
+              "Integrating the back-end with the front-end",
               "Deployment of application on cloud platform",
             ]}
           />
