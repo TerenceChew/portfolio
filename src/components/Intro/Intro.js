@@ -15,7 +15,7 @@ const Intro = ({ showResume }) => {
           <span className="prompt">{">"}</span>
           <span className="name">Terence.</span>
         </div>
-        <h1>Front-End Web Developer.</h1>
+        <h1>Front-End Developer.</h1>
         <h1>I build things and make them pretty on the Internet.</h1>
         <button className="btn">
           <a href="#resume" onClick={showResume}>
