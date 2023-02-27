@@ -3,15 +3,3 @@
   color: var(--font-color-2);
   font-size: var(--font-size-5);
 }
-
-.about-me p :is(span, code) {
-  color: var(--font-color-1);
-}
-
-.about-me p code {
-  display: inline-block;
-  padding: 2px 7px;
-  margin: 0 2px;
-  border-radius: 4px;
-  background-color: #4b545f;
-}
