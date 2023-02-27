@@ -38,7 +38,7 @@ const Contacts = ({ shouldShowResume, toggleResume }) => {
         </div>
 
         <button className="btn resume-btn" onClick={toggleResume}>
-          {shouldShowResume ? "Hide Resume" : "Show Resume"}
+          {shouldShowResume ? "Hide Resume" : "View Resume"}
         </button>
       </div>
     </section>

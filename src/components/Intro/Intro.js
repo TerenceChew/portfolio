@@ -22,7 +22,7 @@ const Intro = ({ showResume }) => {
         </p>
         <button className="btn">
           <a href="#resume" onClick={showResume}>
-            Resume
+            View Resume
           </a>
         </button>
       </section>
