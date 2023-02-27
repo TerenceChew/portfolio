@@ -1,6 +1,7 @@
 import "./Contacts.css";
 import githubSvg from "./assets/svgs/github.svg";
 import linkednSvg from "./assets/svgs/linkedin.svg";
+import mobileSvg from "./assets/svgs/mobile.svg";
 import emailSvg from "./assets/svgs/email.svg";
 
 const Contacts = ({ shouldShowResume, toggleResume }) => {
@@ -28,6 +29,11 @@ const Contacts = ({ shouldShowResume, toggleResume }) => {
           >
             LinkedIn
           </a>
+        </div>
+
+        <div className="contact flex">
+          <img src={mobileSvg} alt="mobile phone" />
+          <p>010-272-2015</p>
         </div>
 
         <div className="contact flex">
