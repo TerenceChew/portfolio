@@ -2,7 +2,7 @@ import "./ProjectsGrid.css";
 // Components
 import Project from "../Project/Project";
 import ProjectIntro from "../ProjectIntro/ProjectIntro";
-import ProjectChallenges from "../ProjectChallenges/ProjectChallenges";
+import ProjectSkillsLearned from "../ProjectSkillsLearned/ProjectSkillsLearned";
 import ProjectTechs from "../ProjectTechs/ProjectTechs";
 import ProjectButtons from "../ProjectButtons/ProjectButtons";
 // Videos
@@ -19,23 +19,44 @@ const ProjectsGrid = () => {
       <div className="projects-container flex f-column">
         <Project video={faceRecogAppVid} title="Face Recognition App">
           <ProjectIntro>
-            Face Recognizer is an application built with <span>React</span> and{" "}
-            <span>Express</span>.
+            Face Recognition App is built with both <span>frontend</span>
+            {" and "}
+            <span>backend</span> technologies. It detects faces in an image
+            {" via "}
+            <span>machine learning API</span> {" from "}
+            <a
+              href="https://www.clarifai.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Clarifai
+            </a>
+            . User authentication is performed on the client side as well as on
+            the server which is hosted on{" "}
+            <a href="https://render.com/" target="_blank" rel="noreferrer">
+              Render
+            </a>
+            , where user data is stored and managed by <span>PostgreSQL</span>.
           </ProjectIntro>
-          <ProjectChallenges>
-            The challenges of making this project are intergrating
-            Machine-Learning API, creating server using Node and Express,
-            Postgres database, and finally deploy to render.
-          </ProjectChallenges>
+          <ProjectSkillsLearned
+            concepts={[
+              "Routing",
+              "User credentials validation",
+              "Determining data constraints and setting up database",
+              "Integrating the backend with the frontend",
+              "Deployment of application on cloud platform",
+            ]}
+          />
           <ProjectTechs
             techs={[
               "React",
               "PostgreSQL",
               "Express",
               "Node.js",
+              "Knex.js",
+              "Bcrypt",
               "JavaScript",
-              "HTML",
-              "CSS",
+              "HTML & CSS",
             ]}
           />
           <ProjectButtons
@@ -46,16 +67,35 @@ const ProjectsGrid = () => {
 
         <Project video={weatherAppVid} title="Weather App">
           <ProjectIntro>
-            Weather App is an application built with ..
+            A fully responsive weather application that enables users to search
+            weather information via city&apos;s name. By leveraging data fetched
+            {" from "}
+            <a
+              href="https://openweathermap.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              OpenWeatherMap API
+            </a>
+            , the app displays the current weather forecast, hourly forecast for
+            the next 24 hours as well as daily forecast for the next 7 days. It
+            also includes a toggle to switch between Celsius and Fahrenheit.
           </ProjectIntro>
-          <ProjectChallenges>The challenges are ..</ProjectChallenges>
+          <ProjectSkillsLearned
+            concepts={[
+              "Integrating third-party APIs",
+              "Handling time zone conversions",
+              "Async/Await",
+              "Formatting dates",
+            ]}
+          />
           <ProjectTechs
             techs={[
               "OpenWeatherMap API",
-              "Async/Await",
               "JavaScript",
-              "HTML",
-              "CSS",
+              "Webpack",
+              "date-fns Library",
+              "HTML & CSS",
             ]}
           />
           <ProjectButtons
@@ -64,37 +104,43 @@ const ProjectsGrid = () => {
           />
         </Project>
 
-        <Project video={todoVid} title="Todo">
-          <ProjectIntro>Todo is an application built with ..</ProjectIntro>
-          <ProjectChallenges>The challenges are ..</ProjectChallenges>
-          <ProjectTechs
-            techs={[
-              "JavaScript",
-              "LocalStorage",
-              "date-fns Library",
-              "Webpack",
-              "HTML",
-              "CSS",
+        <Project video={todoVid} title="To-do">
+          <ProjectIntro>
+            To-do is a classic productivity app that allows users to organize
+            and manage tasks effectively. It also enables users to organize
+            tasks into projects, view tasks by day as well as by week. Every
+            task and project is editable and stored in the browser&apos;{"s "}
+            <span>local storage</span>.
+          </ProjectIntro>
+          <ProjectSkillsLearned
+            concepts={[
+              "Handling JSON data",
+              "Working with local storage",
+              "Basic webpack configurations",
+              "Implementing factory functions",
+              "Writing modular code",
             ]}
           />
+          <ProjectTechs
+            techs={["JavaScript", "LocalStorage", "Webpack", "HTML & CSS"]}
+          />
           <ProjectButtons
-            sourceLink="https://github.com/TerenceChew/todo-app"
-            demoLink="https://terencechew.github.io/todo-app/"
+            sourceLink="https://github.com/TerenceChew/to-do"
+            demoLink="https://terencechew.github.io/to-do/"
           />
         </Project>
 
         <Project video={ticTacToeVid} title="Tic Tac Toe">
-          <ProjectIntro>Tic Tac Toe is a ..</ProjectIntro>
-          <ProjectChallenges>The challenges are ..</ProjectChallenges>
-          <ProjectTechs
-            techs={[
-              "OpenWeatherMap API",
-              "Async/Await",
-              "JavaScript",
-              "HTML",
-              "CSS",
-            ]}
+          <ProjectIntro>
+            This classic childhood game is built to challenge myself to complete
+            it with as little global code as possible, which is achieved by
+            encapsulating each part of the application in it&apos;s own
+            respective <span>module</span>.
+          </ProjectIntro>
+          <ProjectSkillsLearned
+            concepts={["Module pattern", "Transitions", "Animations"]}
           />
+          <ProjectTechs techs={["JavaScript", "HTML & CSS"]} />
           <ProjectButtons
             sourceLink="https://github.com/TerenceChew/tic-tac-toe"
             demoLink="https://terencechew.github.io/tic-tac-toe/"
@@ -102,17 +148,19 @@ const ProjectsGrid = () => {
         </Project>
 
         <Project video={etchASketchVid} title="Etch-A-Sketch">
-          <ProjectIntro>Etch-A-Sketch is a ..</ProjectIntro>
-          <ProjectChallenges>The challenges are ..</ProjectChallenges>
-          <ProjectTechs
-            techs={[
-              "OpenWeatherMap API",
-              "Async/Await",
-              "JavaScript",
-              "HTML",
-              "CSS",
+          <ProjectIntro>
+            A simple sketching app built with the goal of solidifying my
+            understanding of <span>DOM traversal</span> {" and "}{" "}
+            <span>manipulation</span> techniques.
+          </ProjectIntro>
+          <ProjectSkillsLearned
+            concepts={[
+              "Pointer events",
+              "Event capture, bubbling and propagation",
+              "DOM traversal and manipulation",
             ]}
           />
+          <ProjectTechs techs={["JavaScript", "HTML & CSS"]} />
           <ProjectButtons
             sourceLink="https://github.com/TerenceChew/etch-a-sketch"
             demoLink="https://terencechew.github.io/etch-a-sketch/"

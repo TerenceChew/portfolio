@@ -6,7 +6,12 @@
   font-size: var(--font-size-4);
 }
 
-.project-challenges p {
+.project-challenges ul {
   margin-top: 10px;
+  padding-left: 24px;
   font-size: var(--font-size-5);
+}
+
+.project-challenges li::marker {
+  color: var(--font-color-1);
 }

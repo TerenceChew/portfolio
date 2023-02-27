@@ -1,3 +1,15 @@
 .project-intro {
   font-size: var(--font-size-5);
 }
+
+.project-intro :is(span, a) {
+  color: var(--font-color-1);
+}
+
+.project-intro a {
+  text-decoration: none;
+}
+
+.project-intro a:hover {
+  text-decoration: underline;
+}

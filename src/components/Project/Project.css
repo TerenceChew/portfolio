@@ -6,10 +6,6 @@
   border-radius: 5px;
 }
 
-.project span {
-  color: var(--font-color-1);
-}
-
 .project-video {
   width: var(--video-width);
   height: var(--video-height);
