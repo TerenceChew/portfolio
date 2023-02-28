@@ -10,7 +10,7 @@ const AboutMe = () => {
       </p>
       <p>
         My daily routine consists of learning new skills as well as technologies
-        and implementing them to build exciting projects.
+        and implementing them into exciting projects.
       </p>
       <p>
         Currently in search of new opportunities, through which I aim to grow
