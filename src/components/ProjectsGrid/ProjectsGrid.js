@@ -7,6 +7,7 @@ import ProjectTechs from "../ProjectTechs/ProjectTechs";
 import ProjectButtons from "../ProjectButtons/ProjectButtons";
 // Videos
 import faceRecogAppVid from "./assets/videos/face-recognition.mp4";
+import tenziVid from "./assets/videos/tenzi.mp4";
 import weatherAppVid from "./assets/videos/weather-app.mp4";
 import todoVid from "./assets/videos/todo.mp4";
 import ticTacToeVid from "./assets/videos/tic-tac-toe.mp4";
@@ -65,6 +66,28 @@ const ProjectsGrid = () => {
           />
         </Project>
 
+        <Project video={tenziVid} title="Tenzi">
+          <ProjectIntro>
+            A classic Tenzi game built with <span>React</span> which utilizes
+            web storage API to enable users to keep track of their best score
+            and compete against it.
+          </ProjectIntro>
+          <ProjectSkillsLearned
+            concepts={[
+              "Handling array and object updates in React",
+              "Implementing React hooks",
+              "Conditional rendering in React",
+            ]}
+          />
+          <ProjectTechs
+            techs={["React", "JavaScript", "localStorage", "HTML & CSS"]}
+          />
+          <ProjectButtons
+            sourceLink="https://github.com/TerenceChew/tenzi"
+            demoLink="https://terencechew.github.io/tenzi/"
+          />
+        </Project>
+
         <Project video={weatherAppVid} title="Weather App">
           <ProjectIntro>
             A fully responsive weather application that enables users to search
@@ -115,7 +138,7 @@ const ProjectsGrid = () => {
           <ProjectSkillsLearned
             concepts={[
               "Handling JSON data",
-              "Working with local storage",
+              "Working with web storage API",
               "Basic webpack configurations",
               "Implementing factory functions",
               "Writing modular code",
