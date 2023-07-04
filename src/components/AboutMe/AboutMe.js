@@ -13,9 +13,9 @@ const AboutMe = () => {
         and implementing them into exciting projects.
       </p>
       <p>
-        Currently in search of new opportunities, through which I aim to grow
-        individually as well as a developer, with an ultimate goal of becoming a
-        full-stack developer.
+        I am currently in search of new opportunities, through which I aim to grow
+        individually and as a developer, with an ultimate goal of becoming a well-rounded
+        full stack developer.
       </p>
     </section>
   );
