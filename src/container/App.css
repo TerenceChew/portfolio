@@ -74,12 +74,14 @@
   font-family: monospace;
   font-size: var(--font-size-6);
   cursor: pointer;
+  transition: 200ms;
 }
 
 .btn:hover {
   background-color: var(--font-color-1);
   color: black;
   font-weight: bold;
+  transform: translateY(-3px);
 }
 
 .btn > a {

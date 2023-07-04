@@ -3,7 +3,18 @@
   padding: 30px 14px;
   background-color: var(--bg-color-2);
   color: var(--font-color-2);
-  border-radius: 5px;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 .project-video {
@@ -28,3 +39,4 @@
     padding: 35px 30px;
   }
 }
+
