@@ -1,3 +1,4 @@
 # My Portfolio
 
-Visit my portfolio [here](https://terencechew.github.io/portfolio/) ! :point_left:
+Hello!
+Visit my portfolio [here](https://terencechew.github.io/portfolio/)! :point_left:
