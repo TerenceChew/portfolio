@@ -25,6 +25,7 @@ const BurgerMenu = ({ toggleFullPageNav, shouldShowFullPageNav }) => {
   return (
     <button
       className="burger flex f-center"
+      aria-label="Burger menu"
       aria-expanded={ariaExpanded}
       onClick={handleClick}
       style={style}
