@@ -39,7 +39,7 @@ const Contacts = ({ shouldShowResume, toggleResume }) => {
         <div className="contact flex">
           <img src={emailSvg} alt="email" />
           <a href="mailto:wschew97@gmail.com" target="_blank" rel="noreferrer">
-            wschew97@gmail.com
+            terencecws.dev@gmail.com
           </a>
         </div>
 
