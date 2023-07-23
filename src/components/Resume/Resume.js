@@ -1,6 +1,5 @@
 import "./Resume.css";
 import { useEffect, useRef } from "react";
-import resume from "./Terence Chew Resume.pdf";
 
 const Resume = () => {
   const resumeRef = useRef();
@@ -13,7 +12,10 @@ const Resume = () => {
     <section ref={resumeRef} id="resume" className="resume section">
       <h2>Resume</h2>
       <div className="resume-wrapper">
-        <embed src={resume} title="Terence's resume" />
+        <iframe
+          src="https://drive.google.com/file/d/1FvnQ1a73Whki1e7CSBp6Bt5MeOe66lir/preview"
+          title="Terence's resume"
+        />
       </div>
     </section>
   );
