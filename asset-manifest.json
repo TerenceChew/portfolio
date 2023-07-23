@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.83e4aeb0.css",
-    "main.js": "/portfolio/static/js/main.f320fbad.js",
+    "main.js": "/portfolio/static/js/main.aea455ac.js",
     "static/media/face-recognition.mp4": "/portfolio/static/media/face-recognition.4ba002e8893f47f49046.mp4",
     "static/media/todo.mp4": "/portfolio/static/media/todo.50c1ad9e11d71f6061ee.mp4",
     "static/media/weather-app.mp4": "/portfolio/static/media/weather-app.a7f5176d0053434358fb.mp4",
     "static/media/tenzi.mp4": "/portfolio/static/media/tenzi.a474974df437be0561bf.mp4",
+    "static/media/Terence Chew Resume.pdf": "/portfolio/static/media/Terence Chew Resume.114d011bf3af1f17797b.pdf",
     "static/media/etch-a-sketch.mp4": "/portfolio/static/media/etch-a-sketch.9b04bd4fbcb67d92587a.mp4",
     "static/media/tic-tac-toe.mp4": "/portfolio/static/media/tic-tac-toe.ec255d4a5e14b3fe771a.mp4",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.f1d8b56846ea252f4328.pdf",
     "static/media/psql.svg": "/portfolio/static/media/psql.00cecf4960376c2ece83865b93296067.svg",
     "static/media/knexjs.svg": "/portfolio/static/media/knexjs.83a6edaf4ec2aa858e2c25e12a98ac95.svg",
     "static/media/jest.svg": "/portfolio/static/media/jest.19f1f902afdd6d48345325d83d8ed33b.svg",
@@ -27,10 +27,10 @@
     "static/media/npm.svg": "/portfolio/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
     "static/media/email.svg": "/portfolio/static/media/email.4228add88bd4707f365f780f25f325b0.svg",
     "main.83e4aeb0.css.map": "/portfolio/static/css/main.83e4aeb0.css.map",
-    "main.f320fbad.js.map": "/portfolio/static/js/main.f320fbad.js.map"
+    "main.aea455ac.js.map": "/portfolio/static/js/main.aea455ac.js.map"
   },
   "entrypoints": [
     "static/css/main.83e4aeb0.css",
-    "static/js/main.f320fbad.js"
+    "static/js/main.aea455ac.js"
   ]
 }
