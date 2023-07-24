@@ -3,6 +3,9 @@
   justify-content: space-between;
   padding: 0 20px;
   background-color: var(--bg-color-2);
+  position: relative;
+  top: -80px;
+  animation: move-down 1s forwards;
 }
 
 .h-title {
@@ -18,5 +21,11 @@
 @media (min-width: 650px) {
   .header {
     padding: 0 30px;
+  }
+}
+
+@keyframes move-down {
+  to {
+    top: 0;
   }
 }

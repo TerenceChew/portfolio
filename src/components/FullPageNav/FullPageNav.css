@@ -3,10 +3,7 @@
   gap: 1.25rem;
   padding-bottom: 10rem;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   background-color: var(--bg-color-2);
   overflow: hidden;
   transition: width 350ms;
