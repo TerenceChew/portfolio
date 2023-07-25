@@ -1,24 +1,35 @@
 .full-page-nav {
   width: 0%;
   gap: 1.25rem;
-  padding-bottom: 10rem;
   position: fixed;
+  padding: 8.5rem 0 3.85rem 0;
   inset: 0;
   background-color: var(--bg-color-2);
   overflow: hidden;
   transition: width 350ms;
   z-index: 200;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.full-page-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .full-page-nav.expand {
   width: 100%;
+  overflow: scroll;
 }
 
 .full-page-nav h1 {
   font-size: var(--font-size-1);
-  color: var(--font-color-2)
+  color: var(--font-color-2);
 }
 
 .full-page-nav h1 span {
-  color: var(--font-color-1)
+  color: var(--font-color-1);
 }
+
+
+
