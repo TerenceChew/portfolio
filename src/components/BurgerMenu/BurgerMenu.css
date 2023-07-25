@@ -13,24 +13,21 @@
 }
 
 .burger .line {
-  transition: rotate 200ms, 
-              opacity 0ms 200ms,
-              y 200ms 200ms;
+  transition: rotate 250ms,
+              opacity 0ms 250ms,
+              translate 250ms 250ms;
   transform-origin: center;
 }
 
 .burger[aria-expanded="true"] .line {
   transition: opacity 0ms,
-              y 200ms,
-              rotate 200ms 200ms;
-}
-
-.burger[aria-expanded="true"] :is(.top, .bottom) {
-  y: 45;
+              translate 250ms,
+              rotate 250ms 250ms;
 }
 
 .burger[aria-expanded="true"] .top {
   rotate: 45deg;
+  translate: 0% 14.5%;
 }
 
 .burger[aria-expanded="true"] .middle {
@@ -39,4 +36,5 @@
 
 .burger[aria-expanded="true"] .bottom {
   rotate: -45deg;
+  translate: 0% -14.5%;
 }

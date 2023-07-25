@@ -96,7 +96,7 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: var(--font-color-1) var(--font-color-2);
+  scrollbar-color: var(--font-color-1) var(--font-color-2); /* For Firefox */
 }
 
 body {
