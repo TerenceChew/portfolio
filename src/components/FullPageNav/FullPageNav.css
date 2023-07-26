@@ -32,7 +32,7 @@
 }
 
 .full-page-nav .wrapper {
-  margin: auto; /* Trick for centering flex items without its overflow being cut off */
+  margin: auto; /* Trick for centering flex items without overflow being cut off */
 }
 
 
