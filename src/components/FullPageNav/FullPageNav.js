@@ -4,13 +4,15 @@ import Nav from "../Nav/Nav";
 const FullPageNav = ({ shouldShowFullPageNav, hideFullPageNav }) => {
   return (
     <div
-      className={`full-page-nav flex f-column f-center
+      className={`full-page-nav flex f-column 
         ${shouldShowFullPageNav ? "expand" : ""}`}
     >
-      <h1>
-        t<span>.</span>
-      </h1>
-      <Nav flexDirection="column" hideFullPageNav={hideFullPageNav} />
+      <div className="wrapper">
+        <h1 className="flex f-center">
+          t<span>.</span>
+        </h1>
+        <Nav flexDirection="column" hideFullPageNav={hideFullPageNav} />
+      </div>
     </div>
   );
 };

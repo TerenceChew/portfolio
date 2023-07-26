@@ -1,5 +1,5 @@
 .nav-list {
-  width: 485px;
+  width: 320px;
   justify-content: space-between;
   font-size: var(--font-size-5);
   color: var(--font-color-2);
@@ -17,4 +17,10 @@
 
 .nav-list a:hover {
   color: var(--font-color-1);
+}
+
+@media (min-width: 950px) {
+  .nav-list {
+    width: 485px;
+  }
 }

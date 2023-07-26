@@ -1,8 +1,7 @@
 .full-page-nav {
   width: 0%;
-  gap: 1.25rem;
   position: fixed;
-  padding: 8.5rem 0 3.85rem 0;
+  padding: .35rem 0 2.5rem;
   inset: 0;
   background-color: var(--bg-color-2);
   overflow: hidden;
@@ -25,10 +24,15 @@
 .full-page-nav h1 {
   font-size: var(--font-size-1);
   color: var(--font-color-2);
+  margin-bottom: 1rem;
 }
 
 .full-page-nav h1 span {
   color: var(--font-color-1);
+}
+
+.full-page-nav .wrapper {
+  margin: auto; /* Trick for centering flex items without its overflow being cut off */
 }
 
 
