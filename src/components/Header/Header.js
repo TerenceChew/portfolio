@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Header.css";
 import Nav from "../Nav/Nav";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
@@ -14,6 +14,14 @@ const Header = ({ windowWidth }) => {
   const hideFullPageNav = () => {
     setShouldShowFullPageNav(false);
   };
+
+  useEffect(() => {
+    if (shouldShowFullPageNav) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "scroll";
+    }
+  }, [shouldShowFullPageNav]);
 
   return (
     <div id="header" className="header flex f-center">
