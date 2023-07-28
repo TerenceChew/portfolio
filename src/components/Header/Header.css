@@ -1,11 +1,13 @@
 .header {
   height: 80px;
   justify-content: space-between;
+  gap: 2.5rem;
   padding: 0 20px;
   background-color: var(--bg-color-2);
   position: relative;
   top: -80px;
   animation: move-down 1s forwards;
+  overflow: hidden;
 }
 
 .h-title {
