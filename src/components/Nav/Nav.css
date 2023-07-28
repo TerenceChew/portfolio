@@ -19,6 +19,12 @@
   color: var(--font-color-1);
 }
 
+@media (min-width: 650px) {
+  .nav-list {
+    width: 400px;
+  }
+}
+
 @media (min-width: 950px) {
   .nav-list {
     width: 485px;
