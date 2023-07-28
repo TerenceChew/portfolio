@@ -25,6 +25,14 @@
   font-size: var(--font-size-1);
   color: var(--font-color-2);
   margin-bottom: 1.4rem;
+  transform: translateY(-100vh);
+  animation: enter 800ms 800ms forwards;
+}
+
+@keyframes enter {
+  to {
+    transform: translateY(0);
+  }
 }
 
 .full-page-nav h1 span {

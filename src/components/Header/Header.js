@@ -66,7 +66,7 @@ const Header = () => {
       ) : (
         <Nav />
       )}
-      {windowWidth < 950 && (
+      {windowWidth < 950 && shouldShowFullPageNav && (
         <FullPageNav
           shouldShowFullPageNav={shouldShowFullPageNav}
           hideFullPageNav={hideFullPageNav}

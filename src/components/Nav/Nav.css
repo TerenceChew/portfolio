@@ -8,6 +8,34 @@
 
 .nav-list > li {
   cursor: pointer;
+  transform: translateY(100vh);
+  animation: move-up 800ms forwards;
+}
+
+.nav-list > li:nth-child(1) {
+  animation-delay: 100ms;
+}
+
+.nav-list > li:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.nav-list > li:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.nav-list > li:nth-child(4) {
+  animation-delay: 400ms;
+}
+
+.nav-list > li:nth-child(5) {
+  animation-delay: 500ms;
+}
+
+@keyframes move-up {
+  to {
+    transform: translateY(0);
+  }
 }
 
 .nav-list a {
@@ -28,5 +56,8 @@
 @media (min-width: 950px) {
   .nav-list {
     width: 485px;
+  }
+  .nav-list > li {
+    animation: move-up 1.4s forwards;
   }
 }
