@@ -34,7 +34,7 @@
   position: absolute;
   left: 0;
   border-left: 2px solid var(--font-color-2);
-  animation: type 2s 1.35s forwards steps(8, start), blink 1s 3.5s infinite;
+  animation: type 2s 1.5s forwards steps(8, start), blink 1s 3.5s infinite;
   background-color: var(--bg-color-1);
 }
 
@@ -65,5 +65,11 @@
   }
   to {
     border-color: var(--font-color-2);
+  }
+}
+
+@media (min-width: 950px) {
+  .name::before {
+    animation-delay: 2.5s;
   }
 }
