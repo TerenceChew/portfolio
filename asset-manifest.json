@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fb1e5010.css",
+    "main.css": "/portfolio/static/css/main.cc81da3b.css",
     "main.js": "/portfolio/static/js/main.457b0389.js",
     "static/media/face-recognition.mp4": "/portfolio/static/media/face-recognition.4ba002e8893f47f49046.mp4",
     "static/media/todo.mp4": "/portfolio/static/media/todo.50c1ad9e11d71f6061ee.mp4",
@@ -25,11 +25,11 @@
     "static/media/mobile.svg": "/portfolio/static/media/mobile.9f44f359a2cff7e0221dd2112b8bc38b.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
     "static/media/email.svg": "/portfolio/static/media/email.4228add88bd4707f365f780f25f325b0.svg",
-    "main.fb1e5010.css.map": "/portfolio/static/css/main.fb1e5010.css.map",
+    "main.cc81da3b.css.map": "/portfolio/static/css/main.cc81da3b.css.map",
     "main.457b0389.js.map": "/portfolio/static/js/main.457b0389.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb1e5010.css",
+    "static/css/main.cc81da3b.css",
     "static/js/main.457b0389.js"
   ]
 }
