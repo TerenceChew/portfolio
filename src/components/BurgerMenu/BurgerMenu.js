@@ -8,8 +8,10 @@ const BurgerMenu = ({ toggleFullPageNav, shouldShowFullPageNav }) => {
 
     if (isExpanded === "false") {
       burger.setAttribute("aria-expanded", "true");
+      burger.setAttribute("data-animate", "true");
     } else {
       burger.setAttribute("aria-expanded", "false");
+      burger.setAttribute("data-animate", "true");
     }
 
     toggleFullPageNav();
@@ -27,6 +29,7 @@ const BurgerMenu = ({ toggleFullPageNav, shouldShowFullPageNav }) => {
       className="burger flex f-center"
       aria-label="Burger menu"
       aria-expanded={ariaExpanded}
+      data-animate="false"
       onClick={handleClick}
       style={style}
     >
