@@ -26,6 +26,9 @@
   color: var(--font-color-2);
   margin-bottom: 1.4rem;
   transform: translateY(-100vh);
+}
+
+.full-page-nav.expand h1 {
   animation: enter 800ms 800ms forwards;
 }
 

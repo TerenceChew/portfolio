@@ -11,7 +11,11 @@ const FullPageNav = ({ shouldShowFullPageNav, hideFullPageNav }) => {
         <h1 className="flex f-center">
           t<span>.</span>
         </h1>
-        <Nav flexDirection="column" hideFullPageNav={hideFullPageNav} />
+        <Nav
+          flexDirection="column"
+          hideFullPageNav={hideFullPageNav}
+          shouldAnimate={shouldShowFullPageNav}
+        />
       </div>
     </div>
   );

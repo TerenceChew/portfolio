@@ -1,35 +1,40 @@
 import "./Nav.css";
 
-const Nav = ({ flexDirection, hideFullPageNav = null }) => {
+const Nav = ({
+  flexDirection,
+  hideFullPageNav = null,
+  shouldAnimate = true,
+}) => {
   const style = {
     flexDirection,
     gap: flexDirection === "column" ? "2.5rem" : "0",
   };
+  const fadeIn = shouldAnimate ? "fade-in" : "";
 
   return (
     <div className="nav flex f-center">
       <ul className="nav-list flex f-center" style={style}>
-        <li>
+        <li className={fadeIn}>
           <a href="#header" onClick={hideFullPageNav}>
             Home
           </a>
         </li>
-        <li>
+        <li className={fadeIn}>
           <a href="#about-me" onClick={hideFullPageNav}>
             About
           </a>
         </li>
-        <li>
+        <li className={fadeIn}>
           <a href="#skills-grid" onClick={hideFullPageNav}>
             Skills
           </a>
         </li>
-        <li>
+        <li className={fadeIn}>
           <a href="#projects-grid" onClick={hideFullPageNav}>
             Projects
           </a>
         </li>
-        <li>
+        <li className={fadeIn}>
           <a href="#contacts" onClick={hideFullPageNav}>
             Contacts
           </a>
