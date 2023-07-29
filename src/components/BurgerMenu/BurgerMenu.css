@@ -31,7 +31,7 @@
 
 @keyframes top-to-cross {
   50% {
-    transform: translateY(19.5%);
+    transform: rotate(0deg) translateY(19.5%);
   }
   100% {
     transform: rotate(45deg) translateY(19.5%);  
@@ -40,7 +40,7 @@
 
 @keyframes top-to-straight {
   50% {
-    transform: translateY(19.5%);
+    transform: rotate(0deg) translateY(19.5%);
   }
   100% {
     transform: rotate(45deg) translateY(19.5%);
@@ -61,7 +61,7 @@
 
 @keyframes bottom-to-cross {
   50% {
-    transform: translateY(-19.5%);
+    transform: rotate(0deg) translateY(-19.5%);
   }
   100% {
     transform: rotate(-45deg) translateY(-19.5%);
@@ -70,7 +70,7 @@
 
 @keyframes bottom-to-straight {
   50% {
-    transform: translateY(-19.5%);
+    transform: rotate(0deg) translateY(-19.5%);
   }
   100% {
     transform: rotate(-45deg) translateY(-19.5%);
