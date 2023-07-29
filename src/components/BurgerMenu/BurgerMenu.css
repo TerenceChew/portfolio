@@ -13,7 +13,6 @@
 }
 
 .burger .line {
-  transition: opacity 200ms 300ms;
   transform-origin: center;
 }
 
@@ -47,7 +46,12 @@
   }
 }
 
+.burger[aria-expanded="false"] .middle {
+  transition: opacity 200ms 300ms;
+}
+
 .burger[aria-expanded="true"] .middle {
+  transition: opacity 200ms 0ms;
   opacity: 0;
 }
 
