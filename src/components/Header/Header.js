@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./Header.css";
 import Nav from "../Nav/Nav";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
@@ -19,6 +19,8 @@ const debounce = (cb, delay = 500) => {
 const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [shouldShowFullPageNav, setShouldShowFullPageNav] = useState(false);
+
+  const headerRef = useRef();
 
   const toggleFullPageNav = () => {
     setShouldShowFullPageNav((prevVal) => !prevVal);
@@ -53,8 +55,35 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    let prevScrollY = 0;
+
+    const handleScroll = () => {
+      const currScrollY = window.scrollY;
+      let scrollingDown = false;
+
+      if (currScrollY > prevScrollY) {
+        scrollingDown = true;
+      } 
+
+      if (scrollingDown) {
+        headerRef.current.classList.add("hide");
+      } else {
+        headerRef.current.classList.remove("hide");
+      }
+
+      prevScrollY = currScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div id="header" className="header flex f-center">
+    <div id="header" className="header flex f-center" ref={headerRef}>
       <h1 className="h-title">
         Terence<span className="h-span">.dev</span>
       </h1>

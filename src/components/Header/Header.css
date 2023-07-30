@@ -13,6 +13,10 @@
   z-index: 50; /* 4th - Lowest */
 }
 
+.header.hide {
+  animation: move-up 1s forwards;
+}
+
 .h-title {
   font-size: var(--font-size-3);
   font-weight: 800;
@@ -32,5 +36,14 @@
 @keyframes move-down {
   to {
     top: 0;
+  }
+}
+
+@keyframes move-up {
+  from {
+    top: 0;
+  }
+  to {
+    top: -80px;
   }
 }
