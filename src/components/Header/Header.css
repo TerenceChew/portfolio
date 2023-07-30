@@ -8,13 +8,13 @@
   top: -80px;
   right: 0;
   left: 0;
-  animation: move-down 1s forwards;
+  animation: move-down 500ms forwards;
   overflow: hidden;
   z-index: 50; /* 4th - Lowest */
 }
 
 .header.hide {
-  animation: move-up 1s forwards;
+  animation: move-up 500ms forwards;
 }
 
 .h-title {
