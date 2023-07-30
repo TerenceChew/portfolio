@@ -12,7 +12,7 @@ const Contacts = ({ shouldShowResume, toggleResume }) => {
         <div className="contact flex">
           <img src={githubSvg} alt="github" />
           <a
-            href="https://github.com/TerenceChew?tab=repositories"
+            href="https://github.com/TerenceChew"
             target="_blank"
             rel="noreferrer"
           >
