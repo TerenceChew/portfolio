@@ -4,15 +4,23 @@ import Nav from "../Nav/Nav";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import FullPageNav from "../FullPageNav/FullPageNav";
 
-const debounce = (cb, delay = 500) => {
+// Fire the first action then debounce subsequent actions
+const debounceExceptFirst = (cb, delay = 500) => {
   let timeout;
+  let timer = 0;
 
   return (...args) => {
-    clearTimeout(timeout);
-
-    timeout = setTimeout(() => {
+    if (Date.now() - timer > delay) {
       cb(...args);
-    }, delay);
+
+      timer = Date.now();
+    } else {
+      clearTimeout(timeout);
+
+      timeout = setTimeout(() => {
+        cb(...args);
+      }, delay);
+    }
   };
 };
 
@@ -46,7 +54,8 @@ const Header = () => {
         setShouldShowFullPageNav(false);
       }
     };
-    const debouncedHandleResize = debounce(handleResize);
+
+    const debouncedHandleResize = debounceExceptFirst(handleResize);
 
     window.addEventListener("resize", debouncedHandleResize);
 
@@ -64,7 +73,7 @@ const Header = () => {
 
       if (currScrollY > prevScrollY) {
         scrollingDown = true;
-      } 
+      }
 
       if (scrollingDown) {
         headerRef.current.classList.add("hide");
@@ -75,10 +84,12 @@ const Header = () => {
       prevScrollY = currScrollY;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const debouncedHandleScroll = debounceExceptFirst(handleScroll, 850);
+
+    window.addEventListener("scroll", debouncedHandleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedHandleScroll);
     };
   }, []);
 
