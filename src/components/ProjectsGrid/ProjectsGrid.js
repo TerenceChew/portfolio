@@ -42,10 +42,12 @@ const ProjectsGrid = () => {
           <ProjectSkillsLearned
             concepts={[
               "Routing",
-              "User credentials validation",
-              "Determining data constraints and setting up database",
-              "Integrating the back-end with the front-end",
-              "Deployment of application on cloud platform",
+              "Input validation",
+              "Performing user authentication",
+              "Establishing data constraints",
+              "Interacting with database via SQL queries",
+              "Integrating the back- and front-end",
+              "Deploying application on cloud platform",
             ]}
           />
           <ProjectTechs
@@ -139,7 +141,7 @@ const ProjectsGrid = () => {
             concepts={[
               "Handling JSON data",
               "Working with web storage API",
-              "Basic webpack configurations",
+              "Configuring Webpack",
               "Implementing factory functions",
               "Writing modular code",
             ]}
