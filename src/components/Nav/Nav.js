@@ -15,7 +15,7 @@ const Nav = ({
     <div className="nav flex f-center">
       <ul className="nav-list flex f-center" style={style}>
         <li className={fadeIn}>
-          <a href="#header" onClick={hideFullPageNav}>
+          <a href="#intro" onClick={hideFullPageNav}>
             Home
           </a>
         </li>
