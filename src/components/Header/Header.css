@@ -4,10 +4,13 @@
   gap: 2.5rem;
   padding: 0 20px;
   background-color: var(--bg-color-2);
-  position: relative;
+  position: fixed;
   top: -80px;
+  right: 0;
+  left: 0;
   animation: move-down 1s forwards;
   overflow: hidden;
+  z-index: 50; /* 4th - Lowest */
 }
 
 .h-title {

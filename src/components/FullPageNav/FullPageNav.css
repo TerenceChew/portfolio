@@ -6,7 +6,7 @@
   background-color: var(--bg-color-2);
   overflow: hidden;
   transition: width 350ms;
-  z-index: 200;
+  z-index: 200; /* 2nd */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }

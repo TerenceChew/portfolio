@@ -5,7 +5,7 @@
   right: 20px;
   bottom: 50px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 100; /* 3rd */
 }
 
 .scroll-to-top-icon:hover {

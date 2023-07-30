@@ -2,7 +2,7 @@ import "./ScrollToTopIcon.css";
 
 const ScrollToTopIcon = () => {
   return (
-    <a href="#header">
+    <a href="#intro">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="70"
