@@ -46,8 +46,8 @@ const ProjectsGrid = () => {
               "Performing user authentication",
               "Establishing data constraints",
               "Interacting with database via SQL queries",
-              "Integrating the back- and front-end",
-              "Deploying application on cloud platform",
+              "Integrating the front- and back-end",
+              "Deploying application to cloud platform",
             ]}
           />
           <ProjectTechs
