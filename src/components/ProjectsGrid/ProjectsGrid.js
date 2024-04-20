@@ -6,6 +6,7 @@ import ProjectSkillsLearned from "../ProjectSkillsLearned/ProjectSkillsLearned";
 import ProjectTechs from "../ProjectTechs/ProjectTechs";
 import ProjectButtons from "../ProjectButtons/ProjectButtons";
 // Videos
+import mernEstateVid from "./assets/videos/mern-estate.mp4";
 import faceRecogAppVid from "./assets/videos/face-recognition.mp4";
 import tenziVid from "./assets/videos/tenzi.mp4";
 import weatherAppVid from "./assets/videos/weather-app.mp4";
@@ -18,6 +19,62 @@ const ProjectsGrid = () => {
     <section id="projects-grid" className="projects-grid section">
       <h2>Projects</h2>
       <div className="projects-container flex f-column">
+        <Project video={mernEstateVid} title="Mern Estate">
+          <ProjectIntro>
+            Mern Estate is a fully responsive and functional real estate
+            platform built with the <span>MERN stack</span>. It allows users to
+            easily advertise, search, and filter property listings. To enhance
+            security, it utilizes <span>JWT cookies</span>, as well as{" "}
+            <span>input validation</span> and <span>sanitization</span>.
+            Furthermore, it leverages <span>Firebase</span> for storage
+            management and ease of access using <span>Google OAuth</span>. It
+            also implements an <span>image recognition API</span> {" from "}
+            <a
+              href="https://www.clarifai.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Clarifai
+            </a>{" "}
+            to perform image validation, ensuring listing images are always
+            relevant and appropriate.
+          </ProjectIntro>
+          <ProjectSkillsLearned
+            concepts={[
+              "Enhancing UI with Tailwind CSS",
+              "Routing with React Router",
+              "Global state management using Redux Toolkit & Redux Persist",
+              "Implementing JWT",
+              "Input validation & sanitization with Express Validator",
+              "Image validation using machine learning API",
+              "Integrating with Firebase Google OAuth & Cloud Storage",
+              "Data management with MongoDB & Mongoose",
+            ]}
+          />
+          <ProjectTechs
+            techs={[
+              "React",
+              "Vite",
+              "Tailwind CSS",
+              "React Router",
+              "Redux Toolkit & Redux Persist",
+              "Firebase",
+              "Express.js",
+              "Node.js",
+              "MongoDB & Mongoose",
+              "Express Validator",
+              "JWT",
+              "Bcrypt",
+              "JavaScript",
+              "HTML",
+            ]}
+          />
+          <ProjectButtons
+            sourceLink="https://github.com/TerenceChew/mern-estate"
+            demoLink="https://mern-estate-uhye.onrender.com/"
+          />
+        </Project>
+
         <Project video={faceRecogAppVid} title="Face Recognition App">
           <ProjectIntro>
             Face Recognition App is built with both <span>front-end</span>
