@@ -1,5 +1,6 @@
 import "./SkillsGrid.css";
 import uniqid from "uniqid";
+import SkillBox from "../SkillBox/SkillBox";
 import js from "./assets/svgs/js.svg";
 import html from "./assets/svgs/html.svg";
 import css from "./assets/svgs/css.svg";
@@ -12,7 +13,14 @@ import jest from "./assets/svgs/jest.svg";
 import nodejs from "./assets/svgs/nodejs.svg";
 import knexjs from "./assets/svgs/knexjs.svg";
 import express from "./assets/svgs/express.svg";
-import SkillBox from "../SkillBox/SkillBox";
+import mongodb from "./assets/svgs/mongodb.svg";
+import mongoose from "./assets/svgs/mongoose.svg";
+import vite from "./assets/svgs/vite.svg";
+import postman from "./assets/svgs/postman.svg";
+import insomnia from "./assets/svgs/insomnia.svg";
+import tailwind from "./assets/svgs/tailwind.svg";
+import redux from "./assets/svgs/redux.svg";
+import firebase from "./assets/svgs/firebase.svg";
 
 const Skills = () => {
   const skills = [
@@ -41,6 +49,46 @@ const Skills = () => {
       img: git,
     },
     {
+      name: "Tailwind CSS",
+      img: tailwind,
+    },
+    {
+      name: "MongoDB",
+      img: mongodb,
+    },
+    {
+      name: "Mongoose",
+      img: mongoose,
+    },
+    {
+      name: "Express",
+      img: express,
+    },
+    {
+      name: "Node.js",
+      img: nodejs,
+    },
+    {
+      name: "Redux",
+      img: redux,
+    },
+    {
+      name: "Postman",
+      img: postman,
+    },
+    {
+      name: "Insomnia",
+      img: insomnia,
+    },
+    {
+      name: "Firebase",
+      img: firebase,
+    },
+    {
+      name: "Vite",
+      img: vite,
+    },
+    {
       name: "Webpack",
       img: webpack,
     },
@@ -51,14 +99,6 @@ const Skills = () => {
     {
       name: "PostgreSQL",
       img: psql,
-    },
-    {
-      name: "Node.js",
-      img: nodejs,
-    },
-    {
-      name: "Express",
-      img: express,
     },
     {
       name: "Knex.js",
