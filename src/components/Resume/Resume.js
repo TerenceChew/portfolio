@@ -13,7 +13,7 @@ const Resume = () => {
       <h2>Resume</h2>
       <div className="resume-wrapper">
         <iframe
-          src="https://drive.google.com/file/d/1YsgscKKvYK6kwprIKk0hDf6HQl6msFUe/preview"
+          src="https://drive.google.com/file/d/1UNLdsgrJ_hTncqqoohfktHGEQdz6l2dg/preview"
           title="Terence's resume"
         />
       </div>
