@@ -18,7 +18,7 @@ const Intro = ({ showResume }) => {
           </div>
         </h1>
         <p>
-          I&apos;m a <span>Front-End Developer</span>.
+          I&apos;m a <span>Web Developer</span>.
         </p>
         <button className="btn">
           <a href="#resume" onClick={showResume}>
