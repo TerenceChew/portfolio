@@ -4,6 +4,7 @@
         "es2021": true
     },
     "extends": [
+        "@babel/plugin-transform-private-property-in-object",
         "plugin:react/recommended",
         "airbnb",
         "prettier"
