@@ -16,7 +16,7 @@ const Project = ({ video, title, children }) => {
       style={inView ? style : {}}
     >
       <div className="flex f-column f-center">
-        <video className="project-video" autoPlay muted loop>
+        <video className="project-video" autoPlay playsInline muted loop>
           <source src={video} type="video/mp4" />
         </video>
         <h3 className="project-title">{title}</h3>
